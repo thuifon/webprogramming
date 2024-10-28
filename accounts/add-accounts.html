@@ -1,0 +1,114 @@
+<!-- Enhanced Modal -->
+<div
+  class="modal fade"
+  id="modal-add-user"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold text-primary" id="staticBackdropLabel">
+          <i class="bi bi-person-plus me-2"></i> Add User
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form
+        action=""
+        method="post"
+        id="form-add-user"
+        enctype="multipart/form-data"
+      >
+        <div class="modal-body p-4">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="first_name"
+              name="first_name"
+              placeholder="First Name"
+              required
+            />
+            <label for="first_name"><i class="bi bi-person me-1"></i> First Name</label>
+            <div class="invalid-feedback">Please enter the first name.</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="last_name"
+              name="last_name"
+              placeholder="Last Name"
+              required
+            />
+            <label for="last_name"><i class="bi bi-person me-1"></i> Last Name</label>
+            <div class="invalid-feedback">Please enter the last name.</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <label for="username"><i class="bi bi-person-circle me-1"></i> Username</label>
+            <div class="invalid-feedback">Please enter a username.</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <label for="password"><i class="bi bi-lock me-1"></i> Password</label>
+            <div class="invalid-feedback">Please enter a password.</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <select class="form-select" id="role" name="role" required>
+              <option value="" selected disabled>Choose a Role</option>
+              <option value="admin">Admin</option>
+              <option value="staff">Staff</option>
+            </select>
+            <label for="role"><i class="bi bi-person-badge me-1"></i> Role</label>
+            <div class="invalid-feedback">Please select a role.</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            data-bs-dismiss="modal"
+          >
+            <i class="bi bi-x-circle me-1"></i> Close
+          </button>
+          <button type="submit" class="btn btn-primary brand-bg-color">
+            <i class="bi bi-save me-1"></i> Save User
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap Icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+/>
